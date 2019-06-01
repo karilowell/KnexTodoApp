@@ -1,16 +1,8 @@
--- Drops the todolist if it exists currently --
-DROP DATABASE IF EXISTS todolist;
+
+-- DROP DATABASE IF EXISTS knex_todolist_db;
 -- Creates the "todolist" database --
-CREATE DATABASE todolist;
+-- CREATE DATABASE knex_todolist_db;
 
+USE knex_todolist_db;
 
-USE chirpy;
-
-CREATE TABLE `chirps` (
-  `id` Int( 11 ) AUTO_INCREMENT NOT NULL,
-  `author` VARCHAR( 255) NOT NULL,
-  `body` VARCHAR( 255 ) NOT NULL,
-  `created_at` DATETIME NOT NULL,
-
-  PRIMARY KEY ( `id` ) 
-);
+SELECT * FROM todo;
